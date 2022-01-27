@@ -22,7 +22,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint:eslint": "eslint --ext .jsx,.js,.tsx,.ts src/",
-    "fix:eslint": "eslint --fix --ext .js,.jsx,.ts,.tsx src/"
+    "fix:eslint": "eslint --fix --ext .js,.jsx,.ts,.tsx src/",
+    "fmt:write": "prettier --write src/**/*",
+    "fmt:check": "prettier --check src/**/*",
+    "fmt": "npm run fmt:write && npm run lint:eslint"
   },
   "browserslist": {
     "production": [
@@ -41,9 +44,11 @@
     "@typescript-eslint/parser": "^5.10.1",
     "eslint": "^8.7.0",
     "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.28.0",
-    "eslint-plugin-react-hooks": "^4.3.0"
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "prettier": "2.5.1"
   }
 }

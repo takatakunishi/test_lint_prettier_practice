@@ -12,7 +12,8 @@
         "plugin:import/warnings", // 追加
         "plugin:import/typescript", // 追加
         "plugin:@typescript-eslint/recommended", // 追加
-        "plugin:@typescript-eslint/recommended-requiring-type-checking" // 追加
+        "plugin:@typescript-eslint/recommended-requiring-type-checking", // 追加
+        "prettier"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
