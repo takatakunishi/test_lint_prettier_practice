@@ -3,12 +3,8 @@ type TextPropsType = {
 }
 
 const Text: React.FC<TextPropsType> = (props) => {
-  const { text } = props;
-  return (
-    <div>
-      {text}
-    </div>
-  );
-};
+  const { text } = props
+  return <div>{text}</div>
+}
 
-export default Text;
+export default Text
