@@ -1,0 +1,73 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb",
+        "react-app",
+        "react-app/jest",
+        "plugin:import/errors", // 追加
+        "plugin:import/warnings", // 追加
+        "plugin:import/typescript", // 追加
+        "plugin:@typescript-eslint/recommended", // 追加
+        "plugin:@typescript-eslint/recommended-requiring-type-checking" // 追加
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "project": "./tsconfig.json" // 追加
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint",
+        "import" // 追加
+    ],
+    "rules": {
+        "react/jsx-filename-extension": [
+            "error",
+            {
+                "extensions": [
+                    ".jsx",
+                    ".tsx"
+                ]
+            }
+        ],
+        "react/react-in-jsx-scope": "off",
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "js": "never",
+                "jsx": "never",
+                "ts": "never",
+                "tsx": "never"
+            }
+        ],
+        "react/function-component-definition": [
+            "error",
+            {
+                "namedComponents": "arrow-function" // 'function-declaration' | 'function-expression' | 'arrow-function'
+            }
+        ],
+        "arrow-body-style": "off",
+        "react/prop-types": "off"
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [
+                    ".js",
+                    ".jsx",
+                    ".ts",
+                    ".tsx"
+                ]
+            }
+        }
+    }
+}
