@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Textコンポーネントテスト 日本語文字が表示されるか 1`] = `
+<DocumentFragment>
+  <div>
+    日本語文。サンプルですゑゐ
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Textコンポーネントテスト 英語語文字が表示されるか 1`] = `
+<DocumentFragment>
+  <div>
+    Hello. 
+
+This test is not difficult, but important.
+  </div>
+</DocumentFragment>
+`;
