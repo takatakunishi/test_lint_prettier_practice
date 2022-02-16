@@ -81,6 +81,9 @@
                     ".ts",
                     ".tsx"
                 ]
+            },
+            "typescript": {
+                "project": "src"
             }
         }
     }

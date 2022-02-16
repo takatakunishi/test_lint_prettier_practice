@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-import Button, { ButtonPropsType } from '../../../src/components/atoms/Button'
+import Button, { ButtonPropsType } from 'components/atoms/Button'
 
 describe("button test", () => {
     test("click check test", () => {

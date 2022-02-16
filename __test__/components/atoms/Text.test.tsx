@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react'
-import Text from '../../../src/components/atoms/Text'
+import Text from 'components/atoms/Text'
 
 describe('Textコンポーネントテスト', () => {
   test('日本語文字が表示されるか', () => {
