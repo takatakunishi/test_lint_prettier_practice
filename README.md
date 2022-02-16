@@ -20,3 +20,24 @@ run prettier check code format for all file in /src folder
 
 ## fmt
 format all code in /src folder
+
+# npm packages
+## eslint-import-resolver-typescript
+This package resolve import problem about tsconfig for baseUrl.
+This package need to add two below setting.
+
+In eslintrc
+```
+settings: {
+    'import/resolver': {
+        typescript: {},
+    },
+},
+```
+
+In jest.config
+```
+moduleDirectories: [
+    "src"
+],
+```

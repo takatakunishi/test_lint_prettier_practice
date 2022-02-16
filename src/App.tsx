@@ -1,6 +1,6 @@
-import logo from './logo.svg'
-import './App.css'
-import Text from './components/atoms/Text'
+import logo from 'logo.svg'
+import 'App.css'
+import Text from 'components/atoms/Text'
 
 const App: React.FC = () => {
   return (
