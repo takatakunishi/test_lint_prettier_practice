@@ -20,6 +20,7 @@ run prettier check code format for all file in /src folder
 
 ## fmt
 format all code in /src folder
+(run prittier check & run eslint)
 
 # npm packages
 ## eslint-import-resolver-typescript
